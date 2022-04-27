@@ -1,0 +1,75 @@
+{
+  "width"            : 440,
+  "height"           : 440,
+  "title"            : "大富翁",
+  "buildingConfig"   : {
+    "width"          : 40,
+    "height"         : 40
+  },
+  "gridConfig"       : {
+    "width"          : 40,
+    "height"         : 40
+  },
+  "playerConfig"     : {
+    "playerCount"    : 4,
+    "width"          : 20,
+    "height"         : 20
+  },
+  "gameStatus"       : [
+    "waiting",
+    "dicing",
+    "moving",
+    "griding",
+    "buy_building",
+    "reduce_money"
+  ],
+  "rewardConfig"      : [
+    {
+      "message"      : "",
+      "earn"         : 2000,
+      "earnOthers"   : true
+    }
+  ],
+  "buildingName"       : [
+    "银行",
+    "土家堡" ,
+    "自由女神像",
+    "金字塔",
+    "曹县",
+    "普林斯顿大学",
+    "胖崽子大街",
+    "哈啦鱼母校",
+    "萌萌森林",
+    "梁山",
+    "蜀山",
+    "长城",
+    "青藏高原",
+    "春熙路",
+    "哈尔滨中央大街",
+    "北京中关村",
+    "Marry大街",
+    "Fatidol大街",
+    "新世界",
+    "BIGMOM糖果岛",
+    "三峡大坝",
+    "武当山",
+    "少林寺",
+    "小黄人之家",
+    "抱抱游泳馆",
+    "天空之城",
+    "梦幻岛",
+    "太平洋",
+    "北冰洋",
+    "印度",
+    "日本",
+    "乌克兰",
+    "希腊",
+    "葫芦娃山脉"
+  ],
+  "playerName"         : [
+    "player1",
+    "player2",
+    "player3",
+    "player4"
+  ]
+}
