@@ -2,10 +2,7 @@
 # 先引入要用的库
 import pygame
 from pygame.locals import *
-import tkinter
-from tkinter import messagebox
-import easygui, random, sys, time
-from easygui import *
+import random, sys, time
 # 导入json的配置文件
 import json
 # 导入格子类
