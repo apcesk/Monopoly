@@ -40,7 +40,7 @@ class Building(BasicClass):
     self.belongCharacter = belongCharacter
     self.belongGrid      = belongGird
     self.buildingName    = buildingName
-    self.streetNumber     = streetNumber
+    self.streetNumber    = streetNumber
 
   # 修改房屋所属人
   def updateBelongPerson(self,character):
