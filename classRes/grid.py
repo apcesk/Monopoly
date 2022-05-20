@@ -11,7 +11,7 @@ buildingConfig = canvasConfig['buildingConfig']
 streetNameList = canvasConfig['buildingName']
 class Grid(BasicClass):
   # 宽高和图片，所包含的内容
-  def __init__(self, x, y, img, width, height, eventFunction = None|Function, building:Building = None, streetName = None):
+  def __init__(self, x, y, img, width, height, eventFunction = None, building:Building = None, streetName = None):
     '''
       Building - building          : 该格子所对应的建筑物
       function - eventFunction     : 到达该格子触发的事件函数
@@ -53,7 +53,6 @@ def initGrid(gridList, gridWidth, gridHeight, img, count = 36):
   gridList[0].eventFunction = bank
   # 初始化第二行右侧到第八行右侧
   for column in range(1, 8):
-    # gridList.append(Grid(gridConfig['width'], gridConfig['height'] * column + buildingConfig['height'], img, gridWidth, gridHeight))
     gridList.append(Grid(canvasConfig['width'] - gridConfig['width'] - buildingConfig['width'], gridConfig['height'] * column + buildingConfig['height'], img, gridWidth, gridHeight, None, None, streetNameList[streetNameIndex]))
     streetNameIndex += 1
   # 初始化最后一行
@@ -64,6 +63,5 @@ def initGrid(gridList, gridWidth, gridHeight, img, count = 36):
   for column in range(8, 0, -1):
     gridList.append(Grid(gridConfig['width'], gridConfig['height'] * column + buildingConfig['height'], img, gridWidth, gridHeight, None, None, streetNameList[streetNameIndex]))
     streetNameIndex += 1
-    # gridList.append(Grid(canvasConfig['width'] - gridConfig['width'] - buildingConfig['width'], gridConfig['height'] * column + buildingConfig['height'], img, gridWidth, gridHeight))
 
 

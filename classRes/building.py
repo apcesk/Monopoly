@@ -29,7 +29,7 @@ class Building(BasicClass):
       int - cost                  : 继续盖房子的花费
       int - floor                 : 房子的层数
       int - streetNumber          : 大街编号
-      string - buildingName       : 大街编号
+      string - buildingName       : 建筑物名称
       Character - belongCharacter : 所属人
       function updateBelongPerson : 修改所属人
     '''
@@ -53,7 +53,6 @@ class Building(BasicClass):
       self.img = img[self.floor]
     else:
       e.msgbox('This building is in top level!')
-    pass
 
   # 房屋进行降级的方法
   def reduceBuildingLevel(self):
@@ -80,7 +79,8 @@ class Building(BasicClass):
   #   # print(self.floor)
   #   canvas.blit(self.img, (self.x, self.y))
 
-def initBuildingImages(buildingImgList: list, imgFileName: str, keyword: int, maxKeyword: int, fileType: str):
+def initBuildingImages(buildingImgList: list, imgFileName: str, 
+                       keyword: int, maxKeyword: int, fileType: str):
   for i in range(keyword, maxKeyword + 1):
     buildingImgList.append(pi.load(imgFileName + str(i) + fileType))
   return buildingImgList
